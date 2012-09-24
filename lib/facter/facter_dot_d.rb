@@ -15,7 +15,7 @@
 class Facter::Util::DotD
     require 'yaml'
 
-    def initialize(dir="/etc/facts.d", cache_file="/tmp/facts_cache.yml")
+    def initialize(dir="/etc/facts.d", cache_file="/var/lib/puppet/state/facts_cache.yml")
         @dir = dir
         @cache_file = cache_file
         @cache = nil
